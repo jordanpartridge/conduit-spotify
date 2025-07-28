@@ -1,0 +1,54 @@
+{
+    "name": "jordanpartridge/conduit-spotify",
+    "description": "A Conduit component for spotify functionality",
+    "type": "library",
+    "keywords": [
+        "conduit",
+        "laravel",
+        "cli",
+        "component",
+        "conduit-component"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jordan Partridge",
+            "email": "jordan@partridge.rocks"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel-zero/framework": "^11.0",
+        "illuminate/console": "^11.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.18",
+        "pestphp/pest": "^3.0",
+        "phpstan/phpstan": "^1.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "JordanPartridge\\ConduitSpotify\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JordanPartridge\\ConduitSpotify\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JordanPartridge\\ConduitSpotify\\ServiceProvider"
+            ]
+        },
+        "conduit": {
+            "component": true,
+            "commands": [
+                "spotify:init"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
