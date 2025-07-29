@@ -2,10 +2,10 @@
 
 namespace JordanPartridge\ConduitSpotify\Commands\System;
 
+use Illuminate\Console\Command;
 use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
 use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 use JordanPartridge\ConduitSpotify\Services\SpotifyConfigService;
-use Illuminate\Console\Command;
 
 use function Laravel\Prompts\select;
 

@@ -3,13 +3,13 @@
 namespace JordanPartridge\ConduitSpotify\Commands\Library;
 
 use Carbon\Carbon;
+use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Cache;
 use JordanPartridge\ConduitSpotify\Concerns\HandlesAuthentication;
 use JordanPartridge\ConduitSpotify\Concerns\ManagesSpotifyDevices;
 use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
 use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 use JordanPartridge\ConduitSpotify\Services\SpotifyConfigService;
-use Illuminate\Console\Command;
-use Illuminate\Support\Facades\Cache;
 
 class Focus extends Command
 {

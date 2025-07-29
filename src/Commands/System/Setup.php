@@ -2,8 +2,8 @@
 
 namespace JordanPartridge\ConduitSpotify\Commands\System;
 
-use JordanPartridge\ConduitSpotify\Services\SpotifyConfigService;
 use Illuminate\Console\Command;
+use JordanPartridge\ConduitSpotify\Services\SpotifyConfigService;
 
 use function Laravel\Prompts\confirm;
 use function Laravel\Prompts\error;

@@ -2,10 +2,10 @@
 
 namespace JordanPartridge\ConduitSpotify\Commands\Library;
 
+use Illuminate\Console\Command;
 use JordanPartridge\ConduitSpotify\Concerns\ManagesSpotifyDevices;
 use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
 use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
-use Illuminate\Console\Command;
 
 class Playlists extends Command
 {

@@ -2,9 +2,9 @@
 
 namespace JordanPartridge\ConduitSpotify\Commands\Library;
 
+use Illuminate\Console\Command;
 use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
 use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
-use Illuminate\Console\Command;
 
 class Queue extends Command
 {

@@ -2,10 +2,10 @@
 
 namespace JordanPartridge\ConduitSpotify\Services;
 
-use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
-use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
+use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
+use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 
 class Api implements ApiInterface
 {

@@ -2,8 +2,8 @@
 
 namespace JordanPartridge\ConduitSpotify\Services;
 
-use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
 use Illuminate\Support\Facades\Cache;
+use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
 
 class DeviceManager
 {

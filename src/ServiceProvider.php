@@ -2,28 +2,28 @@
 
 namespace JordanPartridge\ConduitSpotify;
 
+use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use JordanPartridge\ConduitSpotify\Commands\Analytics\Analytics;
-use JordanPartridge\ConduitSpotify\Commands\System\Configure;
-use JordanPartridge\ConduitSpotify\Commands\Playback\Current;
-use JordanPartridge\ConduitSpotify\Commands\System\Devices;
 use JordanPartridge\ConduitSpotify\Commands\Library\Focus;
-use JordanPartridge\ConduitSpotify\Commands\System\Login;
-use JordanPartridge\ConduitSpotify\Commands\System\Logout;
-use JordanPartridge\ConduitSpotify\Commands\Playback\Next;
-use JordanPartridge\ConduitSpotify\Commands\Playback\Pause;
-use JordanPartridge\ConduitSpotify\Commands\Playback\Play;
 use JordanPartridge\ConduitSpotify\Commands\Library\Playlists;
 use JordanPartridge\ConduitSpotify\Commands\Library\Queue;
 use JordanPartridge\ConduitSpotify\Commands\Library\Search;
-use JordanPartridge\ConduitSpotify\Commands\System\Setup;
+use JordanPartridge\ConduitSpotify\Commands\Playback\Current;
+use JordanPartridge\ConduitSpotify\Commands\Playback\Next;
+use JordanPartridge\ConduitSpotify\Commands\Playback\Pause;
+use JordanPartridge\ConduitSpotify\Commands\Playback\Play;
 use JordanPartridge\ConduitSpotify\Commands\Playback\Skip;
 use JordanPartridge\ConduitSpotify\Commands\Playback\Volume;
+use JordanPartridge\ConduitSpotify\Commands\System\Configure;
+use JordanPartridge\ConduitSpotify\Commands\System\Devices;
+use JordanPartridge\ConduitSpotify\Commands\System\Login;
+use JordanPartridge\ConduitSpotify\Commands\System\Logout;
+use JordanPartridge\ConduitSpotify\Commands\System\Setup;
 use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
 use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 use JordanPartridge\ConduitSpotify\Services\Api;
 use JordanPartridge\ConduitSpotify\Services\Auth;
 use JordanPartridge\ConduitSpotify\Services\DeviceManager;
-use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 class ServiceProvider extends BaseServiceProvider
 {

@@ -2,10 +2,10 @@
 
 namespace JordanPartridge\ConduitSpotify\Services;
 
-use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Support\Facades\Cache;
+use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 
 class Auth implements AuthInterface
 {

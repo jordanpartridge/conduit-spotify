@@ -2,9 +2,9 @@
 
 namespace JordanPartridge\ConduitSpotify\Commands\Playback;
 
+use Illuminate\Console\Command;
 use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
 use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
-use Illuminate\Console\Command;
 
 class Volume extends Command
 {

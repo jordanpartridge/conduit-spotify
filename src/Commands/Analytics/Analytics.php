@@ -2,10 +2,10 @@
 
 namespace JordanPartridge\ConduitSpotify\Commands\Analytics;
 
+use Illuminate\Console\Command;
 use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
 use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 use JordanPartridge\ConduitSpotify\Services\IntelligentAnalyticsService;
-use Illuminate\Console\Command;
 
 class Analytics extends Command
 {

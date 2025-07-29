@@ -2,8 +2,8 @@
 
 namespace JordanPartridge\ConduitSpotify\Commands\System;
 
-use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 use Illuminate\Console\Command;
+use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 
 class Logout extends Command
 {

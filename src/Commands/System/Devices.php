@@ -2,9 +2,9 @@
 
 namespace JordanPartridge\ConduitSpotify\Commands\System;
 
+use Illuminate\Console\Command;
 use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 use JordanPartridge\ConduitSpotify\Services\DeviceManager;
-use Illuminate\Console\Command;
 
 class Devices extends Command
 {

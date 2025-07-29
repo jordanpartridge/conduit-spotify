@@ -2,9 +2,9 @@
 
 namespace JordanPartridge\ConduitSpotify\Commands\System;
 
-use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Cache;
+use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 
 class Login extends Command
 {
