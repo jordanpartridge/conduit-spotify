@@ -6,6 +6,7 @@ use Illuminate\Console\Command;
 use JordanPartridge\ConduitSpotify\Concerns\ShowsSpotifyStatus;
 use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
 use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
+use JordanPartridge\ConduitSpotify\Services\EventDispatcher;
 
 class Pause extends Command
 {
@@ -15,7 +16,7 @@ class Pause extends Command
 
     protected $description = 'Pause Spotify playback';
 
-    public function handle(AuthInterface $auth, ApiInterface $api): int
+    public function handle(AuthInterface $auth, ApiInterface $api, EventDispatcher $eventDispatcher): int
     {
         if (! $auth->ensureAuthenticated()) {
             $this->error('❌ Not authenticated with Spotify');
@@ -31,6 +32,11 @@ class Pause extends Command
 
             if ($success) {
                 $this->info('⏸️  Playback paused');
+                
+                // Dispatch playback paused event
+                $currentTrack = $api->getCurrentPlayback()['item'] ?? null;
+                $eventDispatcher->dispatchPlaybackStateChanged(false, $currentTrack);
+                
                 $this->showSpotifyStatusBar();
 
                 return 0;

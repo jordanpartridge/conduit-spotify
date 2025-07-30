@@ -7,6 +7,7 @@ use JordanPartridge\ConduitSpotify\Concerns\SendsNotifications;
 use JordanPartridge\ConduitSpotify\Concerns\ShowsSpotifyStatus;
 use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
 use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
+use JordanPartridge\ConduitSpotify\Services\EventDispatcher;
 
 class Play extends Command
 {
@@ -20,7 +21,7 @@ class Play extends Command
 
     protected $description = 'Start playing music on Spotify';
 
-    public function handle(AuthInterface $auth, ApiInterface $api): int
+    public function handle(AuthInterface $auth, ApiInterface $api, EventDispatcher $eventDispatcher): int
     {
         if (! $auth->ensureAuthenticated()) {
             $this->error('❌ Not authenticated with Spotify');
@@ -176,6 +177,10 @@ class Play extends Command
                     $this->info('▶️  Resuming playback');
                     $this->notifyPlaybackResumed();
                 }
+
+                // Dispatch playback started event
+                $currentTrack = $api->getCurrentPlayback()['item'] ?? null;
+                $eventDispatcher->dispatchPlaybackStateChanged(true, $currentTrack);
 
                 // Show status bar after playback starts
                 sleep(1);
