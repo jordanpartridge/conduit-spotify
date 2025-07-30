@@ -24,6 +24,7 @@ use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 use JordanPartridge\ConduitSpotify\Services\Api;
 use JordanPartridge\ConduitSpotify\Services\Auth;
 use JordanPartridge\ConduitSpotify\Services\DeviceManager;
+use JordanPartridge\ConduitSpotify\Services\EventDispatcher;
 
 class ServiceProvider extends BaseServiceProvider
 {
@@ -39,6 +40,7 @@ class ServiceProvider extends BaseServiceProvider
         $this->app->singleton(AuthInterface::class, Auth::class);
         $this->app->singleton(ApiInterface::class, Api::class);
         $this->app->singleton(DeviceManager::class);
+        $this->app->singleton(EventDispatcher::class);
 
         // Register commands
         $this->commands([

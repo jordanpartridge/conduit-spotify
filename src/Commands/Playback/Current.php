@@ -5,6 +5,7 @@ namespace JordanPartridge\ConduitSpotify\Commands\Playback;
 use Illuminate\Console\Command;
 use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
 use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
+use JordanPartridge\ConduitSpotify\Services\EventDispatcher;
 
 class Current extends Command
 {
@@ -14,7 +15,7 @@ class Current extends Command
 
     protected $description = 'Show currently playing track information';
 
-    public function handle(AuthInterface $auth, ApiInterface $api): int
+    public function handle(AuthInterface $auth, ApiInterface $api, EventDispatcher $eventDispatcher): int
     {
         if (! $auth->ensureAuthenticated()) {
             $this->error('❌ Not authenticated with Spotify');
@@ -25,6 +26,9 @@ class Current extends Command
 
         try {
             $current = $api->getCurrentPlayback();
+
+            // Check for track changes and dispatch events
+            $eventDispatcher->checkAndDispatchTrackChange($current);
 
             if (! $current || ! isset($current['item'])) {
                 $this->info('🔇 Nothing currently playing');
