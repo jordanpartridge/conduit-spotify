@@ -12,10 +12,28 @@ use Illuminate\Support\Facades\Event;
  */
 class EventDispatcher
 {
+    /**
+     * Skip threshold percentage - tracks played less than this are considered skipped
+     */
+    private const SKIP_THRESHOLD_PERCENTAGE = 80;
+
+    /**
+     * Default values for unknown track data
+     */
+    private const DEFAULT_TRACK_NAME = 'Unknown';
+    private const DEFAULT_ARTIST_NAME = 'Unknown Artist';
+    private const DEFAULT_ALBUM_NAME = 'Unknown Album';
+    private const DEFAULT_DEVICE_NAME = 'Unknown Device';
+
+    /**
+     * Last known track state for change detection
+     */
     private array $lastTrackState = [];
 
     /**
      * Check for track changes and dispatch events if detected
+     *
+     * @param array $currentPlayback Current playback data from Spotify API
      */
     public function checkAndDispatchTrackChange(array $currentPlayback): void
     {
@@ -44,9 +62,9 @@ class EventDispatcher
         // Update stored state
         $this->lastTrackState = [
             'id' => $trackId,
-            'name' => $currentTrack['name'] ?? 'Unknown',
+            'name' => $currentTrack['name'] ?? self::DEFAULT_TRACK_NAME,
             'artist' => $this->getArtistNames($currentTrack),
-            'album' => $currentTrack['album']['name'] ?? 'Unknown Album',
+            'album' => $currentTrack['album']['name'] ?? self::DEFAULT_ALBUM_NAME,
             'duration_ms' => $currentTrack['duration_ms'] ?? 0,
             'timestamp' => now()->toISOString(),
         ];
@@ -54,6 +72,10 @@ class EventDispatcher
 
     /**
      * Dispatch track changed event
+     *
+     * @param array $previousTrack Previous track data
+     * @param array $currentTrack Current track data from Spotify API
+     * @param array $playbackState Current playback state data
      */
     private function dispatchTrackChanged(array $previousTrack, array $currentTrack, array $playbackState): void
     {
@@ -71,16 +93,16 @@ class EventDispatcher
             ],
             'current' => [
                 'id' => $currentTrack['id'] ?? null,
-                'name' => $currentTrack['name'] ?? 'Unknown',
+                'name' => $currentTrack['name'] ?? self::DEFAULT_TRACK_NAME,
                 'artist' => $this->getArtistNames($currentTrack),
-                'album' => $currentTrack['album']['name'] ?? 'Unknown Album',
+                'album' => $currentTrack['album']['name'] ?? self::DEFAULT_ALBUM_NAME,
                 'duration_ms' => $currentTrack['duration_ms'] ?? 0,
             ],
             'playback' => [
                 'played_duration_ms' => $progressMs,
                 'played_percentage' => round($playedPercentage, 2),
-                'was_skipped' => $playedPercentage < 80, // Consider <80% as skipped
-                'device' => $playbackState['device']['name'] ?? 'Unknown Device',
+                'was_skipped' => $playedPercentage < self::SKIP_THRESHOLD_PERCENTAGE,
+                'device' => $playbackState['device']['name'] ?? self::DEFAULT_DEVICE_NAME,
                 'is_playing' => $playbackState['is_playing'] ?? false,
             ],
             'timestamp' => now()->toISOString(),
@@ -97,15 +119,18 @@ class EventDispatcher
 
     /**
      * Dispatch playback state change event (play/pause)
+     *
+     * @param bool $isPlaying Whether playback is currently active
+     * @param array|null $currentTrack Current track data from Spotify API
      */
-    public function dispatchPlaybackStateChanged(bool $isPlaying, array $currentTrack = null): void
+    public function dispatchPlaybackStateChanged(bool $isPlaying, ?array $currentTrack = null): void
     {
         $eventData = [
             'is_playing' => $isPlaying,
             'state' => $isPlaying ? 'playing' : 'paused',
             'track' => $currentTrack ? [
                 'id' => $currentTrack['id'] ?? null,
-                'name' => $currentTrack['name'] ?? 'Unknown',
+                'name' => $currentTrack['name'] ?? self::DEFAULT_TRACK_NAME,
                 'artist' => $this->getArtistNames($currentTrack),
             ] : null,
             'timestamp' => now()->toISOString(),
@@ -117,6 +142,9 @@ class EventDispatcher
 
     /**
      * Dispatch volume change event
+     *
+     * @param int $oldVolume Previous volume level (0-100)
+     * @param int $newVolume New volume level (0-100)
      */
     public function dispatchVolumeChanged(int $oldVolume, int $newVolume): void
     {
@@ -132,14 +160,17 @@ class EventDispatcher
 
     /**
      * Dispatch seek event (when user jumps to different position)
+     *
+     * @param int $positionMs New position in milliseconds
+     * @param array|null $currentTrack Current track data from Spotify API
      */
-    public function dispatchSeekPerformed(int $positionMs, array $currentTrack = null): void
+    public function dispatchSeekPerformed(int $positionMs, ?array $currentTrack = null): void
     {
         $eventData = [
             'position_ms' => $positionMs,
             'track' => $currentTrack ? [
                 'id' => $currentTrack['id'] ?? null,
-                'name' => $currentTrack['name'] ?? 'Unknown',
+                'name' => $currentTrack['name'] ?? self::DEFAULT_TRACK_NAME,
                 'duration_ms' => $currentTrack['duration_ms'] ?? 0,
             ] : null,
             'timestamp' => now()->toISOString(),
@@ -150,21 +181,26 @@ class EventDispatcher
 
     /**
      * Extract artist names from track data
+     *
+     * @param array $track Track data from Spotify API
+     * @return string Comma-separated artist names
      */
     private function getArtistNames(array $track): string
     {
         if (!isset($track['artists']) || !is_array($track['artists'])) {
-            return 'Unknown Artist';
+            return self::DEFAULT_ARTIST_NAME;
         }
 
         return collect($track['artists'])
             ->pluck('name')
             ->filter()
-            ->join(', ') ?: 'Unknown Artist';
+            ->join(', ') ?: self::DEFAULT_ARTIST_NAME;
     }
 
     /**
      * Get the last known track state for external use
+     *
+     * @return array Last known track state data
      */
     public function getLastTrackState(): array
     {
