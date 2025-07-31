@@ -1,16 +1,37 @@
 {
     "namespace": "spotify",
     "name": "Spotify",
-    "description": "A Conduit component for spotify functionality",
-    "version": "1.0.0",
+    "description": "Complete Spotify integration with event dispatching for playback control, library management, and analytics",
+    "version": "2.0.0",
     "commands": [
-        "spotify:init"
+        "analytics",
+        "configure", 
+        "current",
+        "devices",
+        "focus",
+        "login",
+        "logout",
+        "next",
+        "pause",
+        "play",
+        "playlists",
+        "queue",
+        "search",
+        "setup",
+        "skip",
+        "volume"
     ],
-    "min_conduit_version": "2.0.0",
+    "min_conduit_version": "2.8.0",
     "dependencies": [],
     "tags": [
         "conduit",
-        "cli"
+        "cli",
+        "music",
+        "spotify",
+        "streaming",
+        "playback",
+        "events",
+        "analytics"
     ],
     "author": {
         "name": "Jordan Partridge",
