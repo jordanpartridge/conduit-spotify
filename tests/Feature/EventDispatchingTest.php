@@ -6,7 +6,7 @@ use JordanPartridge\ConduitSpotify\Services\EventDispatcher;
 describe('Event Dispatching', function () {
     beforeEach(function () {
         Event::fake();
-        $this->eventDispatcher = new EventDispatcher();
+        $this->eventDispatcher = new EventDispatcher;
     });
 
     it('dispatches track changed event when track changes', function () {
@@ -33,7 +33,7 @@ describe('Event Dispatching', function () {
         $secondPlayback = [
             'item' => [
                 'id' => 'track_2',
-                'name' => 'Second Song', 
+                'name' => 'Second Song',
                 'artists' => [['name' => 'Second Artist']],
                 'album' => ['name' => 'Second Album'],
                 'duration_ms' => 200000,
@@ -76,7 +76,7 @@ describe('Event Dispatching', function () {
         // Reset for pause test
         Event::fake();
 
-        // Test pause event  
+        // Test pause event
         $this->eventDispatcher->dispatchPlaybackStateChanged(false, $track);
 
         Event::assertDispatched('spotify.playback.state_changed', function ($eventName, $eventData) {
@@ -88,7 +88,7 @@ describe('Event Dispatching', function () {
     });
 
     it('detects skipped tracks correctly', function () {
-        // Set up a track that was played briefly (less than 80%) 
+        // Set up a track that was played briefly (less than 80%)
         $firstPlayback = [
             'item' => [
                 'id' => 'track_1',
@@ -164,7 +164,7 @@ describe('Event Dispatching', function () {
         ];
 
         // Should not throw exception
-        expect(fn() => $this->eventDispatcher->checkAndDispatchTrackChange($incompletePlayback))
+        expect(fn () => $this->eventDispatcher->checkAndDispatchTrackChange($incompletePlayback))
             ->not->toThrow(Exception::class);
 
         $state = $this->eventDispatcher->getLastTrackState();
@@ -172,7 +172,7 @@ describe('Event Dispatching', function () {
         expect($state['artist'])->toBe('Unknown Artist');
     });
 
-    it('can reset state for testing', function () { 
+    it('can reset state for testing', function () {
         // Set some state
         $playback = [
             'item' => [
@@ -185,12 +185,12 @@ describe('Event Dispatching', function () {
         ];
 
         $this->eventDispatcher->checkAndDispatchTrackChange($playback);
-        
+
         expect($this->eventDispatcher->getLastTrackState())->not->toBeEmpty();
 
         // Reset state
         $this->eventDispatcher->resetState();
-        
+
         expect($this->eventDispatcher->getLastTrackState())->toBeEmpty();
     });
 });

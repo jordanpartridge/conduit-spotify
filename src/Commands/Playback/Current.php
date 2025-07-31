@@ -3,25 +3,26 @@
 namespace JordanPartridge\ConduitSpotify\Commands\Playback;
 
 use Illuminate\Console\Command;
+use JordanPartridge\ConduitSpotify\Concerns\HandlesSpotifyOutput;
 use JordanPartridge\ConduitSpotify\Contracts\ApiInterface;
 use JordanPartridge\ConduitSpotify\Contracts\AuthInterface;
 use JordanPartridge\ConduitSpotify\Services\EventDispatcher;
 
 class Current extends Command
 {
+    use HandlesSpotifyOutput;
+
     protected $signature = 'spotify:current 
-                           {--json : Output as JSON}
-                           {--compact : Show compact view}';
+                           {--format=interactive : Output format (interactive, json)}
+                           {--compact : Show compact view}
+                           {--non-interactive : Run without prompts}';
 
     protected $description = 'Show currently playing track information';
 
     public function handle(AuthInterface $auth, ApiInterface $api, EventDispatcher $eventDispatcher): int
     {
         if (! $auth->ensureAuthenticated()) {
-            $this->error('❌ Not authenticated with Spotify');
-            $this->info('💡 Run: php conduit spotify:login');
-
-            return 1;
+            return $this->handleAuthError();
         }
 
         try {
@@ -31,15 +32,43 @@ class Current extends Command
             $eventDispatcher->checkAndDispatchTrackChange($current);
 
             if (! $current || ! isset($current['item'])) {
+                $noPlaybackData = ['message' => 'Nothing currently playing'];
+
+                if ($this->option('format') === 'json') {
+                    return $this->outputJson($noPlaybackData);
+                }
+
                 $this->info('🔇 Nothing currently playing');
 
                 return 0;
             }
 
-            if ($this->option('json')) {
-                $this->line(json_encode($current, JSON_PRETTY_PRINT));
+            // Handle JSON format output with structured data
+            if ($this->option('format') === 'json') {
+                $track = $current['item'];
+                $artist = collect($track['artists'])->pluck('name')->join(', ');
 
-                return 0;
+                $trackData = [
+                    'track' => [
+                        'id' => $track['id'],
+                        'name' => $track['name'],
+                        'artist' => $artist,
+                        'album' => $track['album']['name'] ?? 'Unknown Album',
+                        'duration_ms' => $track['duration_ms'] ?? 0,
+                        'external_urls' => $track['external_urls'] ?? [],
+                    ],
+                    'playback' => [
+                        'is_playing' => $current['is_playing'] ?? false,
+                        'progress_ms' => $current['progress_ms'] ?? 0,
+                        'progress_percent' => $track['duration_ms'] > 0 ?
+                            round((($current['progress_ms'] ?? 0) / $track['duration_ms']) * 100) : 0,
+                        'shuffle_state' => $current['shuffle_state'] ?? false,
+                        'repeat_state' => $current['repeat_state'] ?? 'off',
+                    ],
+                    'device' => $current['device'] ?? null,
+                ];
+
+                return $this->outputJson($trackData);
             }
 
             $track = $current['item'];
@@ -125,9 +154,7 @@ class Current extends Command
             return 0;
 
         } catch (\Exception $e) {
-            $this->error("❌ Error: {$e->getMessage()}");
-
-            return 1;
+            return $this->handleApiError($e, 'getCurrentPlayback');
         }
     }
 

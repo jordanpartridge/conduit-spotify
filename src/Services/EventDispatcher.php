@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Event;
 
 /**
  * Spotify Event Dispatcher Service
- * 
+ *
  * Dispatches events for track changes, playback state changes, and other
  * Spotify interactions to enable component interoperability and analytics.
  */
@@ -21,8 +21,11 @@ class EventDispatcher
      * Default values for unknown track data
      */
     private const DEFAULT_TRACK_NAME = 'Unknown';
+
     private const DEFAULT_ARTIST_NAME = 'Unknown Artist';
+
     private const DEFAULT_ALBUM_NAME = 'Unknown Album';
+
     private const DEFAULT_DEVICE_NAME = 'Unknown Device';
 
     /**
@@ -33,23 +36,23 @@ class EventDispatcher
     /**
      * Check for track changes and dispatch events if detected
      *
-     * @param array $currentPlayback Current playback data from Spotify API
+     * @param  array  $currentPlayback  Current playback data from Spotify API
      */
     public function checkAndDispatchTrackChange(array $currentPlayback): void
     {
-        if (!isset($currentPlayback['item'])) {
+        if (! isset($currentPlayback['item'])) {
             return;
         }
 
         $currentTrack = $currentPlayback['item'];
         $trackId = $currentTrack['id'] ?? null;
-        
-        if (!$trackId) {
+
+        if (! $trackId) {
             return;
         }
 
         $lastTrackId = $this->lastTrackState['id'] ?? null;
-        
+
         // Track changed
         if ($lastTrackId && $lastTrackId !== $trackId) {
             $this->dispatchTrackChanged(
@@ -73,9 +76,9 @@ class EventDispatcher
     /**
      * Dispatch track changed event
      *
-     * @param array $previousTrack Previous track data
-     * @param array $currentTrack Current track data from Spotify API
-     * @param array $playbackState Current playback state data
+     * @param  array  $previousTrack  Previous track data
+     * @param  array  $currentTrack  Current track data from Spotify API
+     * @param  array  $playbackState  Current playback state data
      */
     private function dispatchTrackChanged(array $previousTrack, array $currentTrack, array $playbackState): void
     {
@@ -120,8 +123,8 @@ class EventDispatcher
     /**
      * Dispatch playback state change event (play/pause)
      *
-     * @param bool $isPlaying Whether playback is currently active
-     * @param array|null $currentTrack Current track data from Spotify API
+     * @param  bool  $isPlaying  Whether playback is currently active
+     * @param  array|null  $currentTrack  Current track data from Spotify API
      */
     public function dispatchPlaybackStateChanged(bool $isPlaying, ?array $currentTrack = null): void
     {
@@ -143,8 +146,8 @@ class EventDispatcher
     /**
      * Dispatch volume change event
      *
-     * @param int $oldVolume Previous volume level (0-100)
-     * @param int $newVolume New volume level (0-100)
+     * @param  int  $oldVolume  Previous volume level (0-100)
+     * @param  int  $newVolume  New volume level (0-100)
      */
     public function dispatchVolumeChanged(int $oldVolume, int $newVolume): void
     {
@@ -161,8 +164,8 @@ class EventDispatcher
     /**
      * Dispatch seek event (when user jumps to different position)
      *
-     * @param int $positionMs New position in milliseconds
-     * @param array|null $currentTrack Current track data from Spotify API
+     * @param  int  $positionMs  New position in milliseconds
+     * @param  array|null  $currentTrack  Current track data from Spotify API
      */
     public function dispatchSeekPerformed(int $positionMs, ?array $currentTrack = null): void
     {
@@ -182,12 +185,12 @@ class EventDispatcher
     /**
      * Extract artist names from track data
      *
-     * @param array $track Track data from Spotify API
+     * @param  array  $track  Track data from Spotify API
      * @return string Comma-separated artist names
      */
     private function getArtistNames(array $track): string
     {
-        if (!isset($track['artists']) || !is_array($track['artists'])) {
+        if (! isset($track['artists']) || ! is_array($track['artists'])) {
             return self::DEFAULT_ARTIST_NAME;
         }
 
