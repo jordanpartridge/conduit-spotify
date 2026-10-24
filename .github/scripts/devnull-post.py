@@ -298,6 +298,17 @@ def render(sections, head, tail):
     return "\n\n".join(b for b in blocks if b)
 
 
+# Fixed footer. Always emitted, never trimmed with the sections above it.
+FOOTER = "repo: {repo}\nversion: {version}\ncommit: {commit}\nurl: {url}"
+
+
+def machine_footer(sha):
+    commit = sha or ""
+    url = URL or f"https://github.com/{REPO}/commit/{commit}"
+    text = FOOTER.format(repo=REPO, version=TAG, commit=commit, url=url)
+    return "\n".join(line.rstrip() for line in text.split("\n"))
+
+
 def main():
     sha = tag_sha()
     prev = previous_tag()
@@ -308,7 +319,7 @@ def main():
     sections = [patch_notes(commits, prs), tests(sha) if sha else ("Tests:", []), acceptance(prs), rev, chg,
                 local_pipeline(sha, prs) if sha else ("Local pipeline:", [])]
     head = f"{NAME} {TAG}: {clean(PITCH, 400)}" if PITCH else f"{NAME} {TAG}"
-    tail = "\n".join(x for x in [f"composer require {PACKAGE}" if PACKAGE else "", URL] if x)
+    tail = "\n".join(x for x in [f"composer require {PACKAGE}" if PACKAGE else "", machine_footer(sha)] if x)
     # trim lowest priority first: changed in review, local pipeline, reviews, AC, tests, patch notes
     order = [4, 5, 3, 2, 1, 0]
     for idx in order:
