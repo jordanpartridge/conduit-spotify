@@ -1,0 +1,13 @@
+# This file was partly modified by the lean package validator (http://git.io/lean-package-validator).
+
+* text=auto
+
+.gitattributes  export-ignore
+.github/        export-ignore
+.gitignore      export-ignore
+CLAUDE.md       export-ignore
+composer.lock   export-ignore
+CONTRIBUTING.md export-ignore
+tests/          export-ignore
+phpstan-baseline.neon export-ignore
+phpstan.neon          export-ignore
