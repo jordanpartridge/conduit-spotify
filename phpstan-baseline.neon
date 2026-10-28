@@ -1,0 +1,1681 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Call to an undefined method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:task\\(\\)\\.$#"
+			count: 2
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Call to method getCurrentPlayback\\(\\) on an unknown class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Call to method getCurrentTrack\\(\\) on an unknown class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Call to static method debug\\(\\) on an unknown class Log\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Cannot cast mixed to int\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface not found\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Comparison operation \"\\>\" between \\(array\\|float\\|int\\) and 0 results in an error\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^If condition is always false\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:attemptDeviceActivation\\(\\) has parameter \\$device with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:calculateUsageStreak\\(\\) has parameter \\$dailyUsage with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:createFocusMoodPlaylist\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:createFocusMoodPlaylist\\(\\) has parameter \\$selectedTracks with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:generateLearningInsights\\(\\) has parameter \\$stats with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:generateLearningInsights\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:getFocusPresets\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:selectBestDevice\\(\\) has parameter \\$devices with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:selectBestDevice\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:selectTracksForFocusMode\\(\\) has parameter \\$allTracks with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:selectTracksForFocusMode\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:selectTracksForFocusMode\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:tryFallbackDevices\\(\\) has parameter \\$devices with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Offset 'id' does not exist on array\\|null\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Parameter \\#1 \\$mode of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:getFocusDescription\\(\\) expects string, bool\\|string given\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Parameter \\#1 \\$mode of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:getFocusEmoji\\(\\) expects string, bool\\|string given\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Parameter \\#1 \\$mode of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:getProductivityTip\\(\\) expects string, bool\\|string given\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Parameter \\#1 \\$mode of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:recordSkip\\(\\) expects string, array\\|string\\|true given\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Parameter \\#1 \\$mode of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:showLearningStats\\(\\) expects string, bool\\|string given\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Parameter \\#1 \\$mode of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Focus\\:\\:trackFocusUsage\\(\\) expects string, bool\\|string given\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Parameter \\#1 \\.\\.\\.\\$arrays of function array_merge expects array, mixed given\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$arrays of function array_merge expects array, mixed given\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Part \\$mode \\(array\\|bool\\|string\\) of encapsed string cannot be cast to string\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Part \\$targetVolume \\(mixed\\) of encapsed string cannot be cast to string\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Possibly invalid array key type array\\|bool\\|string\\.$#"
+			count: 1
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 2
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 2
+			path: src/Commands/Library/Focus.php
+
+		-
+			message: "#^Comparison operation \"\\>\" between int\\<1, max\\> and 0 is always true\\.$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Playlists\\:\\:attemptDeviceActivation\\(\\) has parameter \\$device with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Playlists\\:\\:findBestPlaylistMatch\\(\\) has parameter \\$playlists with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Playlists\\:\\:findBestPlaylistMatch\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Playlists\\:\\:getSimilarPlaylists\\(\\) has parameter \\$playlists with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Playlists\\:\\:getSimilarPlaylists\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Playlists\\:\\:selectBestDevice\\(\\) has parameter \\$devices with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Playlists\\:\\:selectBestDevice\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Playlists\\:\\:tryFallbackDevices\\(\\) has parameter \\$devices with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Parameter \\#1 \\$action of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Playlists\\:\\:handleInvalidAction\\(\\) expects string, array\\|bool\\|string given\\.$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Parameter \\#1 \\$query of method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:search\\(\\) expects string, array\\|string\\|true given\\.$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of method Illuminate\\\\Console\\\\Command\\:\\:line\\(\\) expects string, string\\|false given\\.$#"
+			count: 2
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Parameter \\#2 \\$query of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Playlists\\:\\:findBestPlaylistMatch\\(\\) expects string, array\\|string\\|true given\\.$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Parameter \\#2 \\$query of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Library\\\\Playlists\\:\\:getSimilarPlaylists\\(\\) expects string, array\\|string\\|true given\\.$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Part \\$query \\(non\\-empty\\-array\\|non\\-falsy\\-string\\|true\\) of encapsed string cannot be cast to string\\.$#"
+			count: 3
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 1
+			path: src/Commands/Library/Playlists.php
+
+		-
+			message: "#^Parameter \\#1 \\$haystack of function str_starts_with expects string, array\\|bool\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Commands/Library/Queue.php
+
+		-
+			message: "#^Parameter \\#1 \\$query of method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:search\\(\\) expects string, array\\|bool\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Commands/Library/Queue.php
+
+		-
+			message: "#^Parameter \\#2 \\$deviceId of method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:addToQueue\\(\\) expects string\\|null, array\\|bool\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Commands/Library/Queue.php
+
+		-
+			message: "#^Part \\$query \\(array\\|bool\\|string\\|null\\) of encapsed string cannot be cast to string\\.$#"
+			count: 2
+			path: src/Commands/Library/Queue.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 1
+			path: src/Commands/Library/Queue.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 1
+			path: src/Commands/Library/Queue.php
+
+		-
+			message: "#^Binary operation \"\\.\" between array\\|bool\\|string\\|null and 's' results in an error\\.$#"
+			count: 2
+			path: src/Commands/Library/Search.php
+
+		-
+			message: "#^Parameter \\#1 \\$query of method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:search\\(\\) expects string, array\\|bool\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Commands/Library/Search.php
+
+		-
+			message: "#^Part \\$query \\(array\\|bool\\|string\\|null\\) of encapsed string cannot be cast to string\\.$#"
+			count: 1
+			path: src/Commands/Library/Search.php
+
+		-
+			message: "#^Part \\$type \\(array\\|bool\\|string\\|null\\) of encapsed string cannot be cast to string\\.$#"
+			count: 1
+			path: src/Commands/Library/Search.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 2
+			path: src/Commands/Library/Search.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 2
+			path: src/Commands/Library/Search.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Playback\\\\Current\\:\\:outputJson\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Playback/Current.php
+
+		-
+			message: "#^Parameter \\#1 \\$currentPlayback of method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\EventDispatcher\\:\\:checkAndDispatchTrackChange\\(\\) expects array, array\\|null given\\.$#"
+			count: 1
+			path: src/Commands/Playback/Current.php
+
+		-
+			message: "#^Parameter \\#1 \\$messages of method Illuminate\\\\Console\\\\OutputStyle\\:\\:writeln\\(\\) expects iterable\\|string, string\\|false given\\.$#"
+			count: 1
+			path: src/Commands/Playback/Current.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 2
+			path: src/Commands/Playback/Current.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 2
+			path: src/Commands/Playback/Current.php
+
+		-
+			message: "#^Call to method getCurrentPlayback\\(\\) on an unknown class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface\\.$#"
+			count: 1
+			path: src/Commands/Playback/Next.php
+
+		-
+			message: "#^Call to method getCurrentTrack\\(\\) on an unknown class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface\\.$#"
+			count: 1
+			path: src/Commands/Playback/Next.php
+
+		-
+			message: "#^Class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface not found\\.$#"
+			count: 1
+			path: src/Commands/Playback/Next.php
+
+		-
+			message: "#^Parameter \\#1 \\$deviceId of method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:skipToNext\\(\\) expects string\\|null, array\\|bool\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Commands/Playback/Next.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 1
+			path: src/Commands/Playback/Next.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 1
+			path: src/Commands/Playback/Next.php
+
+		-
+			message: "#^Call to method getCurrentPlayback\\(\\) on an unknown class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface\\.$#"
+			count: 1
+			path: src/Commands/Playback/Pause.php
+
+		-
+			message: "#^Call to method getCurrentTrack\\(\\) on an unknown class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface\\.$#"
+			count: 1
+			path: src/Commands/Playback/Pause.php
+
+		-
+			message: "#^Class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface not found\\.$#"
+			count: 1
+			path: src/Commands/Playback/Pause.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Playback\\\\Pause\\:\\:outputJson\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Playback/Pause.php
+
+		-
+			message: "#^Parameter \\#1 \\$deviceId of method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:pause\\(\\) expects string\\|null, array\\|bool\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Commands/Playback/Pause.php
+
+		-
+			message: "#^Parameter \\#1 \\$messages of method Illuminate\\\\Console\\\\OutputStyle\\:\\:writeln\\(\\) expects iterable\\|string, string\\|false given\\.$#"
+			count: 1
+			path: src/Commands/Playback/Pause.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 2
+			path: src/Commands/Playback/Pause.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 2
+			path: src/Commands/Playback/Pause.php
+
+		-
+			message: "#^Call to an undefined method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Playback\\\\Play\\:\\:notify\\(\\)\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Call to method getCurrentPlayback\\(\\) on an unknown class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Call to method getCurrentTrack\\(\\) on an unknown class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Cannot access offset 'artists' on mixed\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Cannot access offset 'name' on mixed\\.$#"
+			count: 4
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Cannot access offset 'uri' on mixed\\.$#"
+			count: 2
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Cannot access offset non\\-empty\\-array\\|non\\-falsy\\-string\\|true on mixed\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface not found\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Playback\\\\Play\\:\\:notifyNowPlaying\\(\\) has parameter \\$trackInfo with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\Playback\\\\Play\\:\\:outputJson\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Negated boolean expression is always true\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Parameter \\#1 \\$haystack of function str_starts_with expects string, array\\|string\\|true given\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Parameter \\#1 \\$messages of method Illuminate\\\\Console\\\\OutputStyle\\:\\:writeln\\(\\) expects iterable\\|string, string\\|false given\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Parameter \\#1 \\$query of method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:search\\(\\) expects string, array\\|string\\|true given\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function strtolower expects string, array\\|string\\|true given\\.$#"
+			count: 2
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function strtolower expects string, mixed given\\.$#"
+			count: 2
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of function collect expects Illuminate\\\\Contracts\\\\Support\\\\Arrayable\\<\\(int\\|string\\), mixed\\>\\|iterable\\<\\(int\\|string\\), mixed\\>\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Part \\$exactArtistMatch\\['name'\\] \\(mixed\\) of encapsed string cannot be cast to string\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Part \\$exactTrackMatch\\['name'\\] \\(mixed\\) of encapsed string cannot be cast to string\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Part \\$this\\-\\>argument\\('uri'\\) \\(array\\|bool\\|string\\|null\\) of encapsed string cannot be cast to string\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Part \\$uri \\(mixed\\) of encapsed string cannot be cast to string\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Part \\$uri \\(non\\-empty\\-array\\|non\\-falsy\\-string\\|true\\) of encapsed string cannot be cast to string\\.$#"
+			count: 1
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 7
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 7
+			path: src/Commands/Playback/Play.php
+
+		-
+			message: "#^Call to method getCurrentPlayback\\(\\) on an unknown class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface\\.$#"
+			count: 1
+			path: src/Commands/Playback/Skip.php
+
+		-
+			message: "#^Call to method getCurrentTrack\\(\\) on an unknown class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface\\.$#"
+			count: 1
+			path: src/Commands/Playback/Skip.php
+
+		-
+			message: "#^Class Conduit\\\\Spotify\\\\Contracts\\\\ApiInterface not found\\.$#"
+			count: 1
+			path: src/Commands/Playback/Skip.php
+
+		-
+			message: "#^Parameter \\#1 \\$deviceId of method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:skipToNext\\(\\) expects string\\|null, array\\|bool\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Commands/Playback/Skip.php
+
+		-
+			message: "#^Parameter \\#1 \\$deviceId of method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:skipToPrevious\\(\\) expects string\\|null, array\\|bool\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Commands/Playback/Skip.php
+
+		-
+			message: "#^Unable to resolve the template type TKey in call to function collect$#"
+			count: 1
+			path: src/Commands/Playback/Skip.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function collect$#"
+			count: 1
+			path: src/Commands/Playback/Skip.php
+
+		-
+			message: "#^Parameter \\#1 \\$volume of method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:setVolume\\(\\) expects int, float\\|int given\\.$#"
+			count: 1
+			path: src/Commands/Playback/Volume.php
+
+		-
+			message: "#^Parameter \\#2 \\$deviceId of method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:setVolume\\(\\) expects string\\|null, array\\|bool\\|string\\|null given\\.$#"
+			count: 1
+			path: src/Commands/Playback/Volume.php
+
+		-
+			message: "#^Match expression does not handle remaining values\\: int\\|string$#"
+			count: 1
+			path: src/Commands/System/Configure.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Configure\\:\\:findPlaylistByUri\\(\\) has parameter \\$playlists with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/System/Configure.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Configure\\:\\:findPlaylistByUri\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/System/Configure.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Configure\\:\\:getCurrentFocusConfig\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/System/Configure.php
+
+		-
+			message: "#^Parameter \\#2 \\$playlistUri of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Configure\\:\\:saveFocusPlaylist\\(\\) expects string, int\\|string given\\.$#"
+			count: 1
+			path: src/Commands/System/Configure.php
+
+		-
+			message: "#^Parameter \\#2 \\$uri of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Configure\\:\\:findPlaylistByUri\\(\\) expects string, int\\|string given\\.$#"
+			count: 1
+			path: src/Commands/System/Configure.php
+
+		-
+			message: "#^Parameter \\#1 \\$action of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Devices\\:\\:invalidAction\\(\\) expects string, array\\|bool\\|string given\\.$#"
+			count: 1
+			path: src/Commands/System/Devices.php
+
+		-
+			message: "#^Parameter \\#1 \\$name of method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\DeviceManager\\:\\:findByName\\(\\) expects string, array\\|string\\|true given\\.$#"
+			count: 1
+			path: src/Commands/System/Devices.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of method Illuminate\\\\Console\\\\Command\\:\\:line\\(\\) expects string, string\\|false given\\.$#"
+			count: 2
+			path: src/Commands/System/Devices.php
+
+		-
+			message: "#^Parameter \\#1 \\$type of method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\DeviceManager\\:\\:findByType\\(\\) expects string, array\\|string\\|true given\\.$#"
+			count: 1
+			path: src/Commands/System/Devices.php
+
+		-
+			message: "#^Part \\$deviceInput \\(non\\-empty\\-array\\|non\\-falsy\\-string\\|true\\) of encapsed string cannot be cast to string\\.$#"
+			count: 1
+			path: src/Commands/System/Devices.php
+
+		-
+			message: "#^Access to an undefined property JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Login\\:\\:\\$configService\\.$#"
+			count: 2
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Call to an undefined method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Login\\:\\:handleManualAuthentication\\(\\)\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Call to an undefined method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Login\\:\\:task\\(\\)\\.$#"
+			count: 5
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Call to method authenticateDevice\\(\\) on an unknown class Conduit\\\\Spotify\\\\Services\\\\SpotifyDeviceFlow\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Call to method extractCodeFromUrl\\(\\) on an unknown class Conduit\\\\Spotify\\\\Services\\\\SpotifyClipboardAuth\\.$#"
+			count: 2
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Call to method getAuthInstructions\\(\\) on an unknown class Conduit\\\\Spotify\\\\Services\\\\SpotifyDeviceFlow\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Call to method isClipboardMonitoringSupported\\(\\) on an unknown class Conduit\\\\Spotify\\\\Services\\\\SpotifyClipboardAuth\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Call to method monitorClipboardForCallback\\(\\) on an unknown class Conduit\\\\Spotify\\\\Services\\\\SpotifyClipboardAuth\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Call to method startServer\\(\\) on an unknown class Conduit\\\\Spotify\\\\Services\\\\BuiltinServer\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Call to method stopServer\\(\\) on an unknown class Conduit\\\\Spotify\\\\Services\\\\BuiltinServer\\.$#"
+			count: 2
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Call to method waitForDeviceAuth\\(\\) on an unknown class Conduit\\\\Spotify\\\\Services\\\\SpotifyDeviceFlow\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Cannot access offset 'code' on mixed\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Instantiated class Conduit\\\\Spotify\\\\Services\\\\BuiltinServer not found\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Instantiated class Conduit\\\\Spotify\\\\Services\\\\SpotifyClipboardAuth not found\\.$#"
+			count: 2
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Instantiated class Conduit\\\\Spotify\\\\Services\\\\SpotifyDeviceFlow not found\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Login\\:\\:displayDeviceInstructions\\(\\) has parameter \\$instructions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Login\\:\\:handleDeviceFlow\\(\\) is unused\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Login\\:\\:handleSmartClipboardAuth\\(\\) is unused\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Login\\:\\:waitForAuthCode\\(\\) has parameter \\$server with no type specified\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Login\\:\\:waitForAuthCode\\(\\) should return string\\|null but returns mixed\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Parameter \\#1 \\$code of method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\AuthInterface\\:\\:exchangeCodeForToken\\(\\) expects string, array\\|string given\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Parameter \\#1 \\$code of method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\AuthInterface\\:\\:exchangeCodeForToken\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Parameter \\#1 \\$json of function json_decode expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function substr expects string, mixed given\\.$#"
+			count: 2
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Parameter \\#1 \\$url of function parse_url expects string, mixed given\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Parameter \\#1 \\$url of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Login\\:\\:openBrowser\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Undefined variable\\: \\$fileCache$#"
+			count: 2
+			path: src/Commands/System/Login.php
+
+		-
+			message: "#^Call to an undefined method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Setup\\:\\:task\\(\\)\\.$#"
+			count: 8
+			path: src/Commands/System/Setup.php
+
+		-
+			message: "#^Cannot access offset 'access_token' on mixed\\.$#"
+			count: 1
+			path: src/Commands/System/Setup.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Setup\\:\\:collectCredentials\\(\\) never returns null so it can be removed from the return type\\.$#"
+			count: 1
+			path: src/Commands/System/Setup.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Setup\\:\\:collectCredentials\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/System/Setup.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Setup\\:\\:storeCredentials\\(\\) has parameter \\$credentials with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/System/Setup.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Setup\\:\\:testSpotifyConnection\\(\\) has parameter \\$credentials with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/System/Setup.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Setup\\:\\:validateCredentials\\(\\) has parameter \\$credentials with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/System/Setup.php
+
+		-
+			message: "#^Parameter \\#1 \\$credentials of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Setup\\:\\:storeCredentials\\(\\) expects array, array\\|null given\\.$#"
+			count: 1
+			path: src/Commands/System/Setup.php
+
+		-
+			message: "#^Parameter \\#1 \\$credentials of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Setup\\:\\:testSpotifyConnection\\(\\) expects array, array\\|null given\\.$#"
+			count: 1
+			path: src/Commands/System/Setup.php
+
+		-
+			message: "#^Parameter \\#1 \\$credentials of method JordanPartridge\\\\ConduitSpotify\\\\Commands\\\\System\\\\Setup\\:\\:validateCredentials\\(\\) expects array, array\\|null given\\.$#"
+			count: 1
+			path: src/Commands/System/Setup.php
+
+		-
+			message: "#^Parameter \\#1 \\$json of function json_decode expects string, bool\\|string given\\.$#"
+			count: 1
+			path: src/Commands/System/Setup.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, string\\|false\\|null given\\.$#"
+			count: 1
+			path: src/Commands/System/Setup.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:addTracksToPlaylist\\(\\) has parameter \\$trackUris with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/ApiInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:createPlaylist\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/ApiInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:getArtist\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/ApiInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:getAvailableDevices\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/ApiInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:getCurrentPlayback\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/ApiInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:getCurrentTrack\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/ApiInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:getPlaylistTracks\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/ApiInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:getUserPlaylists\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/ApiInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:search\\(\\) has parameter \\$types with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/ApiInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ApiInterface\\:\\:search\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/ApiInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ArtistAnalyzerInterface\\:\\:analyzeArtists\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/ArtistAnalyzerInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ArtistAnalyzerInterface\\:\\:createTopArtistsPlaylist\\(\\) has parameter \\$artistFrequency with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/ArtistAnalyzerInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\ArtistAnalyzerInterface\\:\\:createTopArtistsPlaylist\\(\\) has parameter \\$artistTracks with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/ArtistAnalyzerInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\AuthInterface\\:\\:exchangeCodeForToken\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/AuthInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\AuthInterface\\:\\:getAuthorizationUrl\\(\\) has parameter \\$scopes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/AuthInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\AuthInterface\\:\\:refreshToken\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/AuthInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\IntelligentAnalyticsInterface\\:\\:getPersonalizedInsights\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/IntelligentAnalyticsInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\IntelligentAnalyticsInterface\\:\\:runIntelligentAnalysis\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/IntelligentAnalyticsInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\LibraryOverviewInterface\\:\\:getCollectionHealth\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/LibraryOverviewInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\LibraryOverviewInterface\\:\\:getLibraryOverview\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/LibraryOverviewInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\LibraryOverviewInterface\\:\\:getPlaylistBreakdown\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/LibraryOverviewInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\MusicTasteAnalyzerInterface\\:\\:getGenreProfile\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/MusicTasteAnalyzerInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\MusicTasteAnalyzerInterface\\:\\:getListeningEvolution\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/MusicTasteAnalyzerInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\MusicTasteAnalyzerInterface\\:\\:getTasteVector\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/MusicTasteAnalyzerInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\TrendAnalyzerInterface\\:\\:getCoolingDownTracks\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/TrendAnalyzerInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\TrendAnalyzerInterface\\:\\:getHeatingUpTracks\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/TrendAnalyzerInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\TrendAnalyzerInterface\\:\\:getPlaylistMomentum\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/TrendAnalyzerInterface.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Contracts\\\\TrendAnalyzerInterface\\:\\:getTrendingArtists\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Contracts/TrendAnalyzerInterface.php
+
+		-
+			message: "#^Cannot access offset 'error' on mixed\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Cannot access offset 'id' on array\\|false\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Cannot access offset 'reason' on mixed\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Cannot call method getBody\\(\\) on Psr\\\\Http\\\\Message\\\\ResponseInterface\\|null\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Cannot call method getHeader\\(\\) on Psr\\\\Http\\\\Message\\\\ResponseInterface\\|null\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Cannot call method getStatusCode\\(\\) on Psr\\\\Http\\\\Message\\\\ResponseInterface\\|null\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Expression on left side of \\?\\? is not nullable\\.$#"
+			count: 2
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:addTracksToPlaylist\\(\\) has parameter \\$trackUris with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:createPlaylist\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:createPlaylist\\(\\) should return array but returns array\\|false\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:getArtist\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:getArtist\\(\\) should return array but returns array\\|false\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:getAvailableDevices\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:getCurrentPlayback\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:getCurrentPlayback\\(\\) should return array\\|null but returns array\\|false\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:getCurrentTrack\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:getCurrentTrack\\(\\) should return array\\|null but returns array\\|false\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:getPlaylistTracks\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:getUserPlaylists\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:makeRequest\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:makeRequest\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:makeRequest\\(\\) should return array\\|false but returns mixed\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:search\\(\\) has parameter \\$types with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:search\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Api\\:\\:search\\(\\) should return array but returns array\\|false\\.$#"
+			count: 1
+			path: src/Services/Api.php
+
+		-
+			message: "#^Call to method authenticateHeadless\\(\\) on an unknown class Conduit\\\\Spotify\\\\Services\\\\SpotifyHeadlessAuth\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Call to method ensureChromeDriverRunning\\(\\) on an unknown class Conduit\\\\Spotify\\\\Services\\\\SpotifyHeadlessAuth\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Call to static method debug\\(\\) on an unknown class Log\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Cannot access offset 'scheme' on array\\{scheme\\?\\: string, host\\?\\: string, port\\?\\: int\\<0, 65535\\>, user\\?\\: string, pass\\?\\: string, path\\?\\: string, query\\?\\: string, fragment\\?\\: string\\}\\|false\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Instantiated class Conduit\\\\Spotify\\\\Services\\\\SpotifyHeadlessAuth not found\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Auth\\:\\:authenticateWithLocalServer\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Auth\\:\\:exchangeCodeForToken\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Auth\\:\\:exchangeCodeForToken\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Auth\\:\\:getAuthorizationUrl\\(\\) has parameter \\$scopes with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Auth\\:\\:refreshToken\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Auth\\:\\:refreshToken\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Auth\\:\\:startTemporaryServer\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Auth\\:\\:stopServer\\(\\) has parameter \\$serverProcess with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Auth\\:\\:storeTokens\\(\\) has parameter \\$tokenData with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Parameter \\#1 \\$haystack of function strpos expects string, string\\|false given\\.$#"
+			count: 2
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function substr expects string, string\\|false given\\.$#"
+			count: 2
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, string\\|false\\|null given\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Parameter \\#1 \\$tokenData of method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Auth\\:\\:storeTokens\\(\\) expects array, mixed given\\.$#"
+			count: 2
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Property JordanPartridge\\\\ConduitSpotify\\\\Services\\\\Auth\\:\\:\\$defaultScopes type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/Auth.php
+
+		-
+			message: "#^Cannot access offset 'code' on mixed\\.$#"
+			count: 1
+			path: src/Services/BuiltinServer.php
+
+		-
+			message: "#^Cannot call method isRunning\\(\\) on Symfony\\\\Component\\\\Process\\\\Process\\|null\\.$#"
+			count: 1
+			path: src/Services/BuiltinServer.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\BuiltinServer\\:\\:waitForAuth\\(\\) should return string\\|null but returns mixed\\.$#"
+			count: 1
+			path: src/Services/BuiltinServer.php
+
+		-
+			message: "#^Parameter \\#1 \\$json of function json_decode expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Services/BuiltinServer.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\DeviceManager\\:\\:findByName\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/DeviceManager.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\DeviceManager\\:\\:findByType\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/DeviceManager.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\DeviceManager\\:\\:formatDevices\\(\\) has parameter \\$devices with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/DeviceManager.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\DeviceManager\\:\\:formatDevices\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/DeviceManager.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\DeviceManager\\:\\:getActive\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/DeviceManager.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\DeviceManager\\:\\:getLastList\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/DeviceManager.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\DeviceManager\\:\\:getLastList\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Services/DeviceManager.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\DeviceManager\\:\\:list\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/DeviceManager.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\DeviceManager\\:\\:recall\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/DeviceManager.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\DeviceManager\\:\\:recall\\(\\) should return array\\|null but returns mixed\\.$#"
+			count: 1
+			path: src/Services/DeviceManager.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\EventDispatcher\\:\\:checkAndDispatchTrackChange\\(\\) has parameter \\$currentPlayback with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/EventDispatcher.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\EventDispatcher\\:\\:dispatchPlaybackStateChanged\\(\\) has parameter \\$currentTrack with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/EventDispatcher.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\EventDispatcher\\:\\:dispatchSeekPerformed\\(\\) has parameter \\$currentTrack with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/EventDispatcher.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\EventDispatcher\\:\\:dispatchTrackChanged\\(\\) has parameter \\$currentTrack with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/EventDispatcher.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\EventDispatcher\\:\\:dispatchTrackChanged\\(\\) has parameter \\$playbackState with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/EventDispatcher.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\EventDispatcher\\:\\:dispatchTrackChanged\\(\\) has parameter \\$previousTrack with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/EventDispatcher.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\EventDispatcher\\:\\:getArtistNames\\(\\) has parameter \\$track with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/EventDispatcher.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\EventDispatcher\\:\\:getLastTrackState\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/EventDispatcher.php
+
+		-
+			message: "#^Property JordanPartridge\\\\ConduitSpotify\\\\Services\\\\EventDispatcher\\:\\:\\$lastTrackState type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/EventDispatcher.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:analyzeArtists\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:createTopArtistsPlaylist\\(\\) has parameter \\$artistFrequency with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:createTopArtistsPlaylist\\(\\) has parameter \\$artistTracks with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:generateSmartRecommendations\\(\\) has parameter \\$health with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:generateSmartRecommendations\\(\\) has parameter \\$tasteVector with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:generateSmartRecommendations\\(\\) has parameter \\$trending with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:generateSmartRecommendations\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getCollectionHealth\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getCoolingDownTracks\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getGenreProfile\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getHealthRecommendations\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getHeatingUpTracks\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getLibraryOverview\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getListeningEvolution\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getMemoizedAllTracks\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getMemoizedArtist\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getMemoizedPlaylistTracks\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getMemoizedPlaylists\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getPersonalizedInsights\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getPlaylistBreakdown\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getPlaylistMomentum\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getTasteVector\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:getTrendingArtists\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:runIntelligentAnalysis\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Property JordanPartridge\\\\ConduitSpotify\\\\Services\\\\IntelligentAnalyticsService\\:\\:\\$memoizedData type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/IntelligentAnalyticsService.php
+
+		-
+			message: "#^Access to constant ECC_L on an unknown class chillerlan\\\\QRCode\\\\QRCode\\.$#"
+			count: 1
+			path: src/Services/SpotifyClipboardAuth.php
+
+		-
+			message: "#^Access to constant OUTPUT_STRING_TEXT on an unknown class chillerlan\\\\QRCode\\\\QRCode\\.$#"
+			count: 1
+			path: src/Services/SpotifyClipboardAuth.php
+
+		-
+			message: "#^Access to constant VERSION_AUTO on an unknown class chillerlan\\\\QRCode\\\\QRCode\\.$#"
+			count: 1
+			path: src/Services/SpotifyClipboardAuth.php
+
+		-
+			message: "#^Call to method render\\(\\) on an unknown class chillerlan\\\\QRCode\\\\QRCode\\.$#"
+			count: 1
+			path: src/Services/SpotifyClipboardAuth.php
+
+		-
+			message: "#^Instantiated class chillerlan\\\\QRCode\\\\QRCode not found\\.$#"
+			count: 1
+			path: src/Services/SpotifyClipboardAuth.php
+
+		-
+			message: "#^Instantiated class chillerlan\\\\QRCode\\\\QROptions not found\\.$#"
+			count: 1
+			path: src/Services/SpotifyClipboardAuth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyClipboardAuth\\:\\:command_exists\\(\\) has parameter \\$command with no type specified\\.$#"
+			count: 1
+			path: src/Services/SpotifyClipboardAuth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyClipboardAuth\\:\\:extractCodeFromUrl\\(\\) should return string\\|null but returns array\\|string\\|null\\.$#"
+			count: 1
+			path: src/Services/SpotifyClipboardAuth.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, string\\|false given\\.$#"
+			count: 3
+			path: src/Services/SpotifyClipboardAuth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyConfigService\\:\\:getAutoPlayVolume\\(\\) should return int but returns mixed\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyConfigService\\:\\:getClientId\\(\\) should return string\\|null but returns mixed\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyConfigService\\:\\:getClientSecret\\(\\) should return string\\|null but returns mixed\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyConfigService\\:\\:getDefaultScopes\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyConfigService\\:\\:getDefaultScopes\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyConfigService\\:\\:getFocusPlaylists\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyConfigService\\:\\:getFocusStats\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyConfigService\\:\\:getFocusStats\\(\\) should return array but returns mixed\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyConfigService\\:\\:getRedirectUri\\(\\) should return string but returns mixed\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyConfigService\\:\\:getToken\\(\\) should return string\\|null but returns mixed\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyConfigService\\:\\:storeFocusPlaylists\\(\\) has parameter \\$playlists with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyConfigService\\:\\:storeFocusStats\\(\\) has parameter \\$stats with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyConfigService\\:\\:storeTokens\\(\\) has parameter \\$tokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Parameter \\#1 \\$name of static method Illuminate\\\\Support\\\\Facades\\\\Cache\\:\\:store\\(\\) expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Parameter \\#1 \\.\\.\\.\\$arrays of function array_merge expects array, mixed given\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Parameter \\#2 \\.\\.\\.\\$arrays of function array_merge expects array, mixed given\\.$#"
+			count: 1
+			path: src/Services/SpotifyConfigService.php
+
+		-
+			message: "#^Access to constant CAPABILITY on an unknown class Facebook\\\\WebDriver\\\\Chrome\\\\ChromeOptions\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Access to property \\$driver on an unknown class Laravel\\\\Dusk\\\\Browser\\.$#"
+			count: 3
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Call to method addArguments\\(\\) on an unknown class Facebook\\\\WebDriver\\\\Chrome\\\\ChromeOptions\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Call to method isRunning\\(\\) on an unknown class Laravel\\\\Dusk\\\\Chrome\\\\ChromeProcess\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Call to method press\\(\\) on an unknown class Laravel\\\\Dusk\\\\Browser\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Call to method quit\\(\\) on an unknown class Facebook\\\\WebDriver\\\\Remote\\\\RemoteWebDriver\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Call to method start\\(\\) on an unknown class Laravel\\\\Dusk\\\\Chrome\\\\ChromeProcess\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Call to method type\\(\\) on an unknown class Laravel\\\\Dusk\\\\Browser\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Call to method visit\\(\\) on an unknown class Laravel\\\\Dusk\\\\Browser\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Call to method waitUntil\\(\\) on an unknown class Laravel\\\\Dusk\\\\Browser\\.$#"
+			count: 3
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Call to static method chrome\\(\\) on an unknown class Facebook\\\\WebDriver\\\\Remote\\\\DesiredCapabilities\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Call to static method create\\(\\) on an unknown class Facebook\\\\WebDriver\\\\Remote\\\\RemoteWebDriver\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Instantiated class Facebook\\\\WebDriver\\\\Chrome\\\\ChromeOptions not found\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Instantiated class Laravel\\\\Dusk\\\\Browser not found\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Instantiated class Laravel\\\\Dusk\\\\Chrome\\\\ChromeProcess not found\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyHeadlessAuth\\:\\:createHeadlessDriver\\(\\) has invalid return type Facebook\\\\WebDriver\\\\Remote\\\\RemoteWebDriver\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyHeadlessAuth\\:\\:extractCodeFromUrl\\(\\) should return string but returns array\\|string\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Parameter \\$browser of method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyHeadlessAuth\\:\\:performLogin\\(\\) has invalid type Laravel\\\\Dusk\\\\Browser\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Parameter \\$browser of method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyHeadlessAuth\\:\\:waitForCallback\\(\\) has invalid type Laravel\\\\Dusk\\\\Browser\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Property JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyHeadlessAuth\\:\\:\\$clientId \\(string\\) does not accept string\\|null\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Property JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyHeadlessAuth\\:\\:\\$scopes type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Services/SpotifyHeadlessAuth.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyTempServer\\:\\:handleRequest\\(\\) has parameter \\$clientSocket with no type specified\\.$#"
+			count: 1
+			path: src/Services/SpotifyTempServer.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyTempServer\\:\\:sendResponse\\(\\) has parameter \\$clientSocket with no type specified\\.$#"
+			count: 1
+			path: src/Services/SpotifyTempServer.php
+
+		-
+			message: "#^Property JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyTempServer\\:\\:\\$authCode \\(string\\|null\\) does not accept array\\|string\\.$#"
+			count: 1
+			path: src/Services/SpotifyTempServer.php
+
+		-
+			message: "#^Property JordanPartridge\\\\ConduitSpotify\\\\Services\\\\SpotifyTempServer\\:\\:\\$socket has no type specified\\.$#"
+			count: 1
+			path: src/Services/SpotifyTempServer.php
